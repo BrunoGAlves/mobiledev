@@ -27,7 +27,8 @@
         android:inputType="number"
         app:layout_constraintBottom_toTopOf="@+id/editTextNumber3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/editTextNumber3"
@@ -43,14 +44,16 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="85dp"
+        android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="47dp"
+        android:layout_marginStart="109dp"
+        android:layout_marginEnd="22dp"
         android:layout_marginBottom="34dp"
         android:onClick="somar"
         android:text="Button"
         app:layout_constraintBottom_toTopOf="@+id/editTextNumber5"
-        app:layout_constraintStart_toStartOf="@+id/editTextNumber5"
+        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumber3" />
 
     <EditText
@@ -64,5 +67,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="104dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="abrirJanelaNova"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
