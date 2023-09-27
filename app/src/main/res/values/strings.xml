@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">PROJECT48</string>
+
+    <string name="txt_somar">Somar</string>
+    <string name="janela">Janela</string>
+    <string name="calcgorj">CalculoGorjeta</string>
 </resources>
