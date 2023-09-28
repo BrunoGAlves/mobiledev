@@ -38,4 +38,9 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra("soma",soma);
         startActivity(intent);
     }
+    public void abrirTipCalculator(View view){
+        Intent intent = new Intent(this,TipCalculatorActivity.class);
+        startActivity(intent);
+    }
 }
+
